@@ -3,7 +3,9 @@
  * @returns {number} the length of the array
  */
 function getLength(numbers) {
-  // TODO
+
+    return numbers.length;
+
 }
 
 /**
@@ -11,7 +13,18 @@ function getLength(numbers) {
  * @returns {number} the sum of the numbers
  */
 function getSum(numbers) {
-  // TODO
+  let sum = 0; // sum = 28
+
+  for (let i = 0; i < numbers.length; i++) { // i = 1
+    sum = sum + numbers[i]; // 0 + 28
+  }
+
+  /* Basically this is another way to add all the numbers in the array
+  numbers.reduce((total, currentNum) => total + currentNum ) 
+
+  */
+
+  return sum;
 }
 
 /**
